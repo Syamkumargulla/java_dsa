@@ -19,4 +19,31 @@ public class BubbleSorting {
             }
         }
     }
+
+
+
+    /* int[] arr = {1, 2, 3, 9, 5, 7, 6, 4};
+        int n = arr.length;
+
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                if (arr[j] < arr[j - 1]) {
+                    Swape(arr , j ,j-1);
+                }
+
+            }
+
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void Swape(int[]arr , int i , int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+
+    }*/
+
+
+
+
 }
