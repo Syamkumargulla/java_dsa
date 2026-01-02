@@ -8,7 +8,7 @@ public class lefton1 {
         int  n = arr.length;
         int d =1;
         int f = arr[0];
-        int[] temp = new int[n];
+       // int[] temp = new int[n];
         for(int i =d; i<n; i++){
             arr[i-d] = arr[i];
         }

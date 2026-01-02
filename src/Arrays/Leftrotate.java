@@ -10,7 +10,7 @@ public class Leftrotate {
 
         rev(arr , 0 , k-1 );
        rev(arr, k , n-1);
-      rev(arr, 0, n-1);
+        rev(arr, 0, n-1);
         System.out.println(Arrays.toString(arr));
     }
     public static void rev(int[] arr , int s , int e){

@@ -11,11 +11,10 @@ public class Movieingzero {
         int index = 0;
         for(int i:arr) {
             if(arr[i] != 0){
-                temp[index] =arr[i];
+            temp[index] =arr[i];
                 index++;
             }
         }
-
         int j = 0;
         for (int i = 0; i < arr.length ; i++) {
             if (arr[i] != 0){

@@ -11,16 +11,11 @@ public class Findmaxim {
         int  size = sc.nextInt();
         int[] array = new int[size];
         System.out.print("enter the elements in array:");
-
         for (int i = 0; i <size ; i++) {
             array[i] = sc.nextInt();
         }
-      //  for (int num :array){
-       //     System.out.print(num);
-       // }
-
+      // for (int num :array){ System.out.print(num);}
         System.out.println(Arrays.toString(array));
-
         int maxmum = array[0];
         for (int i = 1; i < array.length; i++) {
             if (array[i] > maxmum) {
@@ -28,6 +23,5 @@ public class Findmaxim {
             }
         }
         System.out.println(  " maxmum number" + maxmum);
-
     }
 }

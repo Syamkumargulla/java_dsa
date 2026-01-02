@@ -2,7 +2,7 @@ package Basic;
 
 public class PalinStringbuilder {
     public static void main(String[] args) {
-        String n = "madam";
+        String n = "syam";
         StringBuilder n1 = new StringBuilder(n);
         n1.reverse();
 

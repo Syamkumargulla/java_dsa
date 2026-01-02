@@ -7,8 +7,7 @@ class h {
         return age;
     }
 
-    public void setAge(int a) {
-        age = a;
+    public void setAge(int a) { age = a;
     }
 }
 

@@ -17,6 +17,7 @@ class VeryAdvance extends  Advance{
     }
 }
 
+
 public class Inher {
     public static void main(String[] args) {
      VeryAdvance obj = new VeryAdvance();
