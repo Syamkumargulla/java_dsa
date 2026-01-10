@@ -17,5 +17,6 @@ public class ArraysBasic {
         System.out.println(Arrays.toString(str ));
     }
 }
+//
 //l1.forEach(
 //(element) -> { System.out.print(element); });
