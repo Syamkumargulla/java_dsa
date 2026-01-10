@@ -18,6 +18,6 @@ public class try1 {
                 s = arr[j];
             }
         }
-        System.out.println(s);
+        System.out.print(s);
     }
 }
