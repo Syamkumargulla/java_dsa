@@ -17,10 +17,16 @@ public class Kro {
             y++;
         }
 
-        for (int h = n-k; h <n ; h++) {
+       /* for (int h = n-k; h <n ; h++) {
             arr[h] = temp[h-(n-k)];
 
+        }*/
+
+        int t = 0;
+        for (int h = n-k; h < n; h++) {
+            arr[h] = temp[t++];
         }
+
         System.out.println(Arrays.toString(arr));
     }
 }
