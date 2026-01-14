@@ -13,6 +13,7 @@ public class Main {
         head = inserrtAtst(head ,  "syam");
       //inserrtAtst(head , "Syam");
         inserrtAtend(head , "kumar");
+        inserrtmid(head, 3, "G");
       //  pringt(head);
        // update(head , 3 , "ss");
        // System.out.println(search(head, "C" ));
@@ -84,6 +85,17 @@ public class Main {
         Node newNode = new Node(newnodee);
         newNode.next = head;
         return  newNode;
+    }
+    public static void inserrtmid(Node head , int index,String newnodee) {
+        Node temp = head;
+        Node n6 = new Node(newnodee);
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        Node nextt = temp.next;
+        temp.next = n6;
+        n6.next = nextt;
+
     }
 
 
