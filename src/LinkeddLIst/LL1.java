@@ -7,18 +7,21 @@ public class LL1 {
         Node n1 = new Node("A");
         Node n2 = new Node("B");
         Node n3 = new Node("C");
-        Node n4 = new Node("D");
+        Node n5 = new Node("E");
         n1.next = n2;
         n2.next = n3;
-        n3.next = n4;
+        n3.next = n5;
         Node head = n1;
-        //   insert(head , "syam");
-        update(head, 3, "E");
-        insertend(head, "kumar");
-        insertstart(head, "syam");
+
+
+       // update(head, 3, "E");
+       head = insert(head ,0, "D");
+       // insertend(head, "kumar");
+      //  head =  insertstart(head , "syam");
+
+       // insertstart(head, "syam");
+       // System.out.println(leng(head));
         pringt(head);
-        System.out.println(leng(head));
-        pp(head);
 
 
     }
@@ -62,11 +65,28 @@ public class LL1 {
         temp.name = newname;
     }
 
-    public static void insertstart(Node head, String newname) {
+    public static Node insertstart(Node head, String newname) {
         Node newwNode = new Node(newname);
         newwNode.next = head;
-        head = newwNode;
+        return  newwNode;
     }
+    public  static Node  insert(Node head , int  index , String newname){
+
+        if(index == 0) {
+           return insertstart(head , newname);
+        }
+        Node temp = head;
+        for (int i = 0; i <index -1 ; i++) {
+            temp = temp.next;
+        }
+        Node n4  = new Node(newname);
+        n4.next = temp.next;
+        temp.next = n4;
+        return head ;
+    }
+
+
+
 
     public static void insertend(Node head, String newname) {
         Node temp = head;
@@ -76,13 +96,6 @@ public class LL1 {
         temp.next = new Node(newname);
     }
 
-    public static void pp(Node head) {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.name);
-            temp = temp.next;
-            System.out.print("->");
-        }
 
-    }
+
 }
