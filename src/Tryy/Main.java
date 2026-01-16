@@ -1,6 +1,7 @@
 package Tryy;
 
 public class Main {
+
     public static void main(String[] args) {
         Node n1 = new Node("A");
         Node n2 = new Node("B");
@@ -10,10 +11,12 @@ public class Main {
         n2.next = n3;
         n3.next = n4;
         Node head = n1;
-        head = inserrtAtst(head ,  "syam");
+       // head = inserrtAtst(head ,  "syam");
       //inserrtAtst(head , "Syam");
-        inserrtAtend(head , "kumar");
-        inserrtmid(head, 3, "G");
+      //  inserrtAtend(head , "kumar");
+     head = insert(head , 8, "g");
+      //  inserrtmid(head, 2, "G");
+
       //  pringt(head);
        // update(head , 3 , "ss");
        // System.out.println(search(head, "C" ));
@@ -88,15 +91,33 @@ public class Main {
     }
     public static void inserrtmid(Node head , int index,String newnodee) {
         Node temp = head;
-        Node n6 = new Node(newnodee);
+
         for (int i = 0; i < index; i++) {
             temp = temp.next;
         }
+        Node n6 = new Node(newnodee);
         Node nextt = temp.next;
         temp.next = n6;
         n6.next = nextt;
 
     }
+    public static Node insert(Node head , int index,String newnodee) {
+        if (index == 0) return inserrtAtst(head, newnodee);
 
+        Node temp = head;
+
+        for (int i = 0; i < index; i++) {
+            if(temp == null){
+                System.out.println("index is > length of linked list");
+                return head;
+            }
+            temp = temp.next;
+        }
+        Node n6 = new Node(newnodee);
+        Node nextt = temp.next;
+        temp.next = n6;
+        n6.next = nextt;
+        return head;
+    }
 
 }
