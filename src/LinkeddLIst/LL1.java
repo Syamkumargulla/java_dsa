@@ -15,7 +15,7 @@ public class LL1 {
 
 
        // update(head, 3, "E");
-       head = insert(head ,0, "D");
+       head = insert(head ,3, "D");
        // insertend(head, "kumar");
       //  head =  insertstart(head , "syam");
 
