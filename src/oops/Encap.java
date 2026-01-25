@@ -2,23 +2,27 @@ package oops;
 //Encapsulation = Wrapping data + methods together
 //✔ Use private variables
 //✔ Access them using getters & setters
-    class BankAccount {
-        private int balance = 1000;
-        public int getBalance() {
-            return balance;
-        }
-        public void setBalance(int amount) {
-            if (amount > 0) {
-                balance = amount;
-            }
-        }
-    }
-    public class Encap {
-        public static void main(String[] args) {
-            BankAccount acc = new BankAccount();
-            acc.setBalance(5000);
-            System.out.println(acc.getBalance());
-        }
+public class Encap {
+    public static void main(String[] args) {
+Bankaccount obj = new Bankaccount();
+    obj.setBalance(100);
+    System.out.println(obj.getBalance());
     }
 
 
+
+}
+
+class  Bankaccount{
+     private int balance = 100;
+     public int getBalance(){
+         return  balance;
+     }
+     public void setBalance(int amount){
+         if(amount > 0){
+             balance = balance + amount;
+         }
+     }
+
+
+}
