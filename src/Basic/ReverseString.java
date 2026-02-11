@@ -3,7 +3,7 @@ package Basic;
 public class ReverseString {
     public static void main(String[] args) {
 
-        String n = "Syam kumar";
+        String n = "MadaM";
         StringBuilder n1 = new StringBuilder(n);
         n1.reverse();
         String rev = " ";
@@ -12,5 +12,6 @@ public class ReverseString {
             rev = rev + n.charAt(i);
         }
         System.out.println(rev);
+        System.out.print(n.equals(n1.toString()));
     }
 }
