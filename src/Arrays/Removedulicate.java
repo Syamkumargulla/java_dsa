@@ -28,11 +28,6 @@ public class Removedulicate {
     }
 }
 
-
-
-
-
-
  /*  HashSet<Integer> set = new HashSet<>(arr.length);
         for (int i:arr) {
             set.add(arr[i]);

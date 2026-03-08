@@ -2,7 +2,6 @@ package Encapsulation;
 
 public class Enacap {
 
-
     public class BankAccount {
         private double balance; // Internal state is hidden
 

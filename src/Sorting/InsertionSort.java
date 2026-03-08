@@ -7,7 +7,6 @@ public class InsertionSort {
         int[] arr = {4,5,1,2,3};
         inset(arr);
         System.out.println(Arrays.toString(arr));
-
     }
     static  void  inset(int[] arr){
         for (int i = 0; i < arr.length-1; i++) {

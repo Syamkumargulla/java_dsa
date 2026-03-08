@@ -13,7 +13,7 @@ public class Onetwo {
 
             //space
             for (int j = 1; j <= space; j++) {
-                System.out.print("*");
+                System.out.print(" ");
             }
             //num
             for (int j = i; j >=1  ; j--) {
@@ -21,7 +21,7 @@ public class Onetwo {
             }
 
          System.out.println ();
-            space = space-2;
+           space = space-2;
         }
     }
 }

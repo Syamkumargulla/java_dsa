@@ -4,7 +4,7 @@ class Human {
         System.out.println("hi");
     }
 
-      public Human(int a){
+    public Human(int a){
         System.out.println(a);
     }
 

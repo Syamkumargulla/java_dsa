@@ -20,3 +20,4 @@ public class ArraysBasic {
 //
 //l1.forEach(
 //(element) -> { System.out.print(element); });
+//int[] ar = new int[4]
