@@ -33,6 +33,9 @@ public class TwoD {
             System.out.println(Arrays.toString(arr[i]));
         }
 
+
+
+
         for (int[] a:arr){
             System.out.println(Arrays.toString(a));
         }

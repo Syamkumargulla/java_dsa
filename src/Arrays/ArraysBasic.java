@@ -15,6 +15,7 @@ public class ArraysBasic {
             System.out.print(a + " ");
         }
         System.out.println(Arrays.toString(str ));
+
     }
 }
 //
