@@ -12,19 +12,12 @@ public class arry1 {
         last.add(19);
         last.add(20);
         last.contains(1);
+        // last.clear();
+        last.size();
         last.set(0,22);
         //last.remove(0,1);
         System.out.println(last);
-        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
-
-        for (int i = 0; i <3 ; i++) {
-           // last.add(new ArrayList<>());
-        }
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-              //  last.get(i).add(sc.nextInt());
-            }
-        }
+        System.out.println(last.get(0));
 
     }
 }
