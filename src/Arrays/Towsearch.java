@@ -1,18 +1,17 @@
-import java.util.Arrays;
-import java.util.Scanner;
+package Arrays;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+import java.util.Arrays;
+
+public class Towsearch {
     public static void main(String[] args) {
-    int[][] arr = {
-            {22,4,5},
-            {33,6,7},
-            {44,8,9}
-    };
-    int target = 33;
-    int[] ans = serach(arr, target);
-    System.out.println(Arrays.toString(ans));
+        int[][] arr = {
+                {22,4,5},
+                {33,6,7},
+                {44,8,9}
+        };
+        int target = 33;
+        int[] ans = serach(arr, target);
+        System.out.println(Arrays.toString(ans));
     }
     static int[] serach(int[][] arr , int target){
         for (int i = 0; i <arr.length ; i++) {
